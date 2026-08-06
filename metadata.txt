@@ -2,13 +2,13 @@
 name=PE3D-Downloader
 qgisMinimumVersion=3.16
 qgisMaximumVersion=3.99
-description=Baixa MDE, MDT e ortofotos do Pernambuco 3D por área de interesse e gera mosaicos VRT recortados.
-version=0.2.4
+description=Downloads PE3D DEM, DTM and orthophoto tiles for an area of interest and creates clipped VRT mosaics.
+version=0.2.5
 author=Evanderson H. Aguiar
 email=evanderson.eng@gmail.com
-about=Plugin para localizar quadrículas do programa Pernambuco 3D da escala 1:5000 que intersectam uma área de interesse, baixar produtos MDE, MDT e ORTOFOTO, validar e extrair os arquivos e gerar mosaicos VRT recortados. Possui processamento em segundo plano, cache validado, retomada de downloads e carregamento parcial após cancelamento ou falha de conexão.
+about=Locates 1:5,000 Pernambuco 3D grid tiles intersecting an area of interest, downloads DEM, DTM and orthophoto products, securely extracts them, and creates clipped VRT mosaics. Includes background processing, validated cache, resumable downloads, and partial loading after cancellation or network failure.
 category=Raster
-tags=PE3D,Pernambuco 3D,MDE,MDT,ortofoto,raster,VRT,download
+tags=PE3D,Pernambuco 3D,DEM,DTM,orthophoto,raster,VRT,download
 homepage=https://github.com/Evanderson-Aguiar/PE3D-Downloader
 repository=https://github.com/Evanderson-Aguiar/PE3D-Downloader
 tracker=https://github.com/Evanderson-Aguiar/PE3D-Downloader/issues
@@ -17,7 +17,9 @@ experimental=false
 deprecated=false
 server=false
 hasProcessingProvider=false
-changelog=0.2.4
+changelog=0.2.5
+    - Adds the required short English description and English plugin metadata.
+    0.2.4
     - Corrige alertas de segurança Bandit B110 no tratamento da ferramenta de AOI.
     0.2.3
     - Corrige a geração do mosaico e do VRT recortado.
