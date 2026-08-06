@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# Arquivo placeholder. Gere via pyrcc5 se usar resources.qrc.
+#<RCC>
+##  <qresource prefix="/pe3d">
+#    <file>icon.png</file>
+#  </qresource>
+#</RCC>

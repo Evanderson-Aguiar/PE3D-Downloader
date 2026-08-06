@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PE3DDownloaderDialogBase</class>
+ <widget class="QDialog" name="PE3DDownloaderDialogBase">
+  <property name="windowTitle">
+   <string>PE3D-Downloader</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <item>
+    <widget class="QGroupBox" name="grpAOI">
+     <property name="title">
+      <string>Área de interesse</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayoutAOI">
+
+      <item row="0" column="0">
+       <widget class="QLabel" name="lblAOIMode">
+        <property name="text">
+         <string>Fonte da área</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QComboBox" name="cmbAoiMode"/>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QLabel" name="lblLayer">
+        <property name="text">
+         <string>Camada (para extensão)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="cmbLayer"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="btnPickRect">
+        <property name="text">
+         <string>Desenhar retângulo</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="2" column="0">
+       <widget class="QLabel" name="lblAoiInfo">
+        <property name="text">
+         <string>AOI:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QLineEdit" name="txtAoiInfo">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QGroupBox" name="grpOutput">
+     <property name="title">
+      <string>Saída</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayoutOutput">
+      <item row="0" column="0">
+       <widget class="QLabel" name="lblOut">
+        <property name="text">
+         <string>Pasta</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="txtOutDir"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="btnBrowse">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QGroupBox" name="grpData">
+     <property name="title">
+      <string>Produtos</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayoutData">
+      <item>
+       <widget class="QCheckBox" name="chkMDE">
+        <property name="text">
+         <string>MDE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="chkMDT">
+        <property name="text">
+         <string>MDT</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="chkORTO">
+        <property name="text">
+         <string>ORTOFOTO</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="lblTotalProgress">
+     <property name="text">
+      <string>Progresso total</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="lblProductStatus">
+     <property name="text">
+      <string>Aguardando...</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QProgressBar" name="progressProduct">
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPlainTextEdit" name="txtLog">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutButtons">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+
+     <item>
+      <widget class="QPushButton" name="btnRun">
+       <property name="text">
+        <string>Executar</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QPushButton" name="btnClose">
+       <property name="text">
+        <string>Fechar</string>
+       </property>
+      </widget>
+     </item>
+
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
