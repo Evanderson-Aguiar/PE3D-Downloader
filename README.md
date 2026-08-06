@@ -1,3 +1,5 @@
+<img src="icon.png" alt="Logo" width="200">
+
 # PE3D-Downloader
 
 Plugin para QGIS que localiza e baixa produtos do programa Pernambuco 3D (PE3D) a partir de uma área de interesse. O plugin trabalha com MDE, MDT e ortofotos, da escala 1:5000, organiza os arquivos, cria mosaicos virtuais e carrega no projeto somente a extensão escolhida pelo usuário.
